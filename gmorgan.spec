@@ -34,9 +34,15 @@ rm -fr $RPM_BUILD_ROOT/%_docdir
 %find_lang %name
 
 #menu
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}): command="%{name}" icon="sound_section.png" needs="x11" title="GMorgan" longtitle="MIDI Auto-Accompaniment" section="Multimedia/Sound"
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application
+Exec=%{name}
+Icon=sound_section
+Name=GMorgan
+Comment=MIDI Auto-Accompaniment
+Categories=Audio;
 EOF
 
 %clean
@@ -53,5 +59,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog README
 %{_bindir}/%name
 %{_datadir}/%name
-%{_menudir}/%name
+%{_datadir}/applications/mandriva-%name.desktop
 
