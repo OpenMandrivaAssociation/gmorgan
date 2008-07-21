@@ -1,6 +1,6 @@
 %define name	gmorgan
 %define version	0.25
-%define release  %mkrel 1
+%define release  %mkrel 2
 
 Name: 	 	%{name}
 Summary:	MIDI auto-accompaniment generator 	
