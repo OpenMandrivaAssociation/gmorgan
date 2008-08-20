@@ -3,6 +3,8 @@ Summary:	MIDI auto-accompaniment generator
 Version: 	0.25
 Release: 	%{mkrel 2}
 Source0:	%{name}-%{version}.tar.bz2
+# Fix build on x86-64 (from Debian) - AdamW 2008/08
+Patch0:		01_ftbfs_amd64.diff
 URL:		http://gmorgan.sourceforge.net/
 License:	GPLv2+
 Group:		Sound
@@ -17,6 +19,7 @@ soundfonts and the ALSA sequencer for emulate a Rhythm Station.
 
 %prep
 %setup -q
+%patch0 -p0 -b .x86_64
 #perl -p -i -e "s|-O6|$RPM_OPT_FLAGS||g" src/Makefile
 
 %build
