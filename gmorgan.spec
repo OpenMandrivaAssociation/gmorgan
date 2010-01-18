@@ -1,7 +1,7 @@
 Name: 	 	gmorgan
 Summary:	MIDI auto-accompaniment generator 	
 Version: 	0.25
-Release: 	%{mkrel 3}
+Release: 	%{mkrel 4}
 Source0:	%{name}-%{version}.tar.bz2
 # Fix build on x86-64 (from Debian) - AdamW 2008/08
 Patch0:		01_ftbfs_amd64.diff
