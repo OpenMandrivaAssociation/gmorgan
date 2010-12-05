@@ -1,7 +1,7 @@
 Name: 	 	gmorgan
 Summary:	MIDI auto-accompaniment generator 	
 Version: 	0.27
-Release: 	%mkrel 1
+Release: 	%mkrel 2
 Source0:	%{name}-%{version}.tar.gz
 URL:		http://gmorgan.sourceforge.net/
 License:	GPLv2+
