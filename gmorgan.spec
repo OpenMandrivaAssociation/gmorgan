@@ -19,16 +19,13 @@ soundfonts and the ALSA sequencer for emulate a Rhythm Station.
 %setup -q
 
 %build
-rm -f m4/po.m4
-cp %{_datadir}/aclocal/po.m4 m4/po.m4
-autoreconf
 %configure2_5x
 %make  
 										
 %install
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/%{_bindir}
-make install PREFIX=%{_prefix} DESTDIR=%{buildroot}
+%makeinstall_std
+
 rm -fr %{buildroot}/%{_docdir}
 %find_lang %{name}
 
