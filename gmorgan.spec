@@ -1,7 +1,7 @@
 Summary:	MIDI auto-accompaniment generator
 Name:		gmorgan
 Version:	0.56
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		Sound
 URL:		http://gmorgan.sourceforge.net/
