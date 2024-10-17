@@ -4,7 +4,7 @@ Version:	0.56
 Release:	3
 License:	GPLv2+
 Group:		Sound
-URL:		http://gmorgan.sourceforge.net/
+URL:		https://gmorgan.sourceforge.net/
 Source0:	%{name}_%{version}.tar.gz
 
 BuildRequires:	fltk-devel
