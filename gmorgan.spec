@@ -7,6 +7,11 @@ Group:		Sound
 URL:		https://gmorgan.sourceforge.net/
 Source0:	%{name}_%{version}.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	fltk-devel
 BuildRequires:	gettext-devel
 BuildRequires:	pkgconfig(alsa)
