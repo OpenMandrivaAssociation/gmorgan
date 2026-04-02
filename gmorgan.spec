@@ -23,6 +23,7 @@ BuildRequires:		fltk-devel
 BuildRequires:		gettext-devel
 BuildRequires:		pkgconfig(alsa)
 BuildRequires:		pkgconfig(cairo)
+BuildRequires:		pkgconfig(libjpeg)
 BuildRequires:		pkgconfig(pixman-1)
 
 %description
