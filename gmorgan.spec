@@ -23,8 +23,19 @@ BuildRequires:		fltk-devel
 BuildRequires:		gettext-devel
 BuildRequires:		pkgconfig(alsa)
 BuildRequires:		pkgconfig(cairo)
+BuildRequires:		pkgconfig(dbus-1)
+BuildRequires:		pkgconfig(libdecor-0)
 BuildRequires:		pkgconfig(libjpeg)
+BuildRequires:		pkgconfig(libpng)
 BuildRequires:		pkgconfig(pixman-1)
+BuildRequires:		pkgconfig(wayland-client)
+BuildRequires:		pkgconfig(wayland-cursor)
+BuildRequires:		pkgconfig(x11)
+BuildRequires:		pkgconfig(xcursor)
+BuildRequires:		pkgconfig(xfixes)
+BuildRequires:		pkgconfig(xinerama)
+BuildRequires:		pkgconfig(xkbcommon)
+BuildRequires:		pkgconfig(xrender)
 
 %description
 GMorgan is a modern MIDI organ with full auto-accompaniment. It uses
