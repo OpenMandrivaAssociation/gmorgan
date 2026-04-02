@@ -1,0 +1,12 @@
+diff -urN gmorgan-0.79/configure.ac gmorgan-0.79-patched/configure.ac
+--- gmorgan-0.79/configure.ac	2016-11-10 13:43:21.000000000 +1000
++++ gmorgan-0.79-patched/configure.ac	2016-11-30 19:45:37.457743386 +1000
+@@ -17,7 +17,7 @@
+ AC_CHECK_FUNCS([bzero memset select strdup])
+ AM_GNU_GETTEXT([external]) 
+ AM_GNU_GETTEXT_VERSION
+-LIBS="`fltk-config --use-images --ldflags` -lasound"
++LIBS="`fltk-config --use-images --ldflags` -lfltk -lasound"
+ CXXFLAGS="-g `fltk-config --use-images --cxxflags`"
+ AC_CHECK_HEADERS([unistd.h])
+ AC_CHECK_HEADER(alsa/asoundlib.h, true, AC_MSG_ERROR([Alsa is required]))

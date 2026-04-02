@@ -1,0 +1,30 @@
+diff -rupN gmorgan-0.79.old/src/Stk.cpp gmorgan-0.79/src/Stk.cpp
+--- gmorgan-0.79.old/src/Stk.cpp	2010-02-04 21:52:40.000000000 +0100
++++ gmorgan-0.79/src/Stk.cpp	2026-03-24 18:11:25.512553686 +0100
+@@ -123,7 +123,7 @@ void Stk :: setRawwavePath( std::string
+ 
+ void Stk :: swap16(unsigned char *ptr)
+ {
+-  register unsigned char val;
++  unsigned char val;
+ 
+   // Swap 1st and 2nd bytes
+   val = *(ptr);
+@@ -133,7 +133,7 @@ void Stk :: swap16(unsigned char *ptr)
+ 
+ void Stk :: swap32(unsigned char *ptr)
+ {
+-  register unsigned char val;
++  unsigned char val;
+ 
+   // Swap 1st and 4th bytes
+   val = *(ptr);
+@@ -149,7 +149,7 @@ void Stk :: swap32(unsigned char *ptr)
+ 
+ void Stk :: swap64(unsigned char *ptr)
+ {
+-  register unsigned char val;
++  unsigned char val;
+ 
+   // Swap 1st and 8th bytes
+   val = *(ptr);

@@ -1,0 +1,18 @@
+diff -rupN gmorgan-0.79.old/src/gmorgan.chord.cpp gmorgan-0.79/src/gmorgan.chord.cpp
+--- gmorgan-0.79.old/src/gmorgan.chord.cpp	2016-10-25 05:01:17.000000000 +0200
++++ gmorgan-0.79/src/gmorgan.chord.cpp	2018-02-13 21:27:48.341331779 +0100
+@@ -711,12 +711,12 @@ CHORD::CHORD ()
+   if (iget == 0)
+     {
+ /// if it is not in the home directory look here.
+-      sprintf (filename, "%s", "/usr/local/share/gmorgan/data/ChordTable");
++      sprintf (filename, "%s", "/usr/share/gmorgan/data/ChordTable");
+       iget = loadChordtable (filename);
+       if (iget == 0)
+ 	{
+ 	  cout <<
+-	    "Can't find the chordtable file. If you installed, it should be in /usr/local/share/...  "
++	    "Can't find the chordtable file. If you installed, it should be in /usr/share/...  "
+ 	    << endl;
+ 	  cout <<
+ 	    "to customize it, move it to your home directory as .ChordTable "

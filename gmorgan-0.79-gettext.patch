@@ -1,0 +1,12 @@
+diff -urN gmorgan-0.79/configure.ac gmorgan-0.79-patched/configure.ac
+--- gmorgan-0.79/configure.ac	2016-11-30 19:48:23.232750228 +1000
++++ gmorgan-0.79-patched/configure.ac	2016-11-30 19:48:33.941750670 +1000
+@@ -16,7 +16,7 @@
+ AC_FUNC_SELECT_ARGTYPES
+ AC_CHECK_FUNCS([bzero memset select strdup])
+ AM_GNU_GETTEXT([external]) 
+-AM_GNU_GETTEXT_VERSION
++AM_GNU_GETTEXT_VERSION([0.19.4])
+ LIBS="`fltk-config --use-images --ldflags` -lfltk -lasound"
+ CXXFLAGS="-g `fltk-config --use-images --cxxflags`"
+ AC_CHECK_HEADERS([unistd.h])

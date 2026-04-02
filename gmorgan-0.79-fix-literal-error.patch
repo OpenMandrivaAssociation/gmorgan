@@ -1,0 +1,12 @@
+diff -rupN gmorgan-0.79.old/src/NotGenerated.cxx gmorgan-0.79/src/NotGenerated.cxx
+--- gmorgan-0.79.old/src/NotGenerated.cxx	2016-11-21 20:33:29.000000000 +0100
++++ gmorgan-0.79/src/NotGenerated.cxx	2026-04-02 12:03:55.877787421 +0200
+@@ -16139,7 +16139,7 @@ GMORGAN::cb_BPSave (Fl_Menu_ * o, void *
+ void GMORGAN::cb_BPPrint_i(Fl_Menu_*, void*) {
+   char *filename;
+ #define EXT ".ly"
+-filename=fl_file_chooser(gettext("Print Song:"),"(*"EXT")",NULL,0);
++filename=fl_file_chooser(gettext("Print Song:"),"(*" EXT ")",NULL,0);
+ if (filename==NULL) return;
+ filename=fl_filename_setext(filename,EXT);
+ #undef EXT

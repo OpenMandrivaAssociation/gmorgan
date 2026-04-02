@@ -1,0 +1,19 @@
+diff -urN gmorgan-0.79/data/Makefile.am gmorgan-0.79-patched/data/Makefile.am
+--- gmorgan-0.79/data/Makefile.am	2016-11-22 05:09:50.000000000 +1000
++++ gmorgan-0.79-patched/data/Makefile.am	2016-11-30 19:55:56.283768926 +1000
+@@ -15,7 +15,6 @@
+ Four.gmsong \
+ fullkeyboard.gmos \
+ GMPresetList.txt \
+-help \
+ hhtm.gmps \
+ HowHignTheBoom.gmsong \
+ HowInsensate.gmsong \
+@@ -33,7 +32,6 @@
+ README \
+ Saxaphones.gmos \
+ shearing.gmos \
+-skins \
+ sounds.gmox \
+ StyleLib.lib \
+ template.gmos \
